@@ -2,6 +2,11 @@ html {
     height: 100%;
 }
 
+body{
+    color: #fff;
+    background-color: black;
+}
+
 #stars {
     width: 1px;
     height: 1px;

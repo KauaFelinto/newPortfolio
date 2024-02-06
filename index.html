@@ -3,6 +3,10 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="background.css">
+    <link href="https://db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi+V2" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="responsive.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
@@ -10,11 +14,14 @@
 <body>
     <header>
         <a id="logo" href="#">Kauã</a>
-        <ul class="links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <i onclick="menu()" id="menu-bar" class='bx bx-menu'></i>
+
+          <ul id="menu" class="links active">
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contato">Contact</a></li>
+          </ul>
+
     </header>
 
     <div id="stars"></div>
@@ -22,11 +29,99 @@
     <div id="stars3"></div>
     <section class="home">
         <div class="initial">
-            <h1>Hello, <br> I'm Kaua <br> Front-end Developer</h1>
+            <h1>Hello, <br> i'm Kaua <br> Front-end Developer</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, ullam? Id deleniti</p>
             <button id="btn">Curriculo</button>
         </div>
     </section>
+
+    <section class="habilities" id="about">
+        <div class="about">
+            <img id="perfil" src="https://sm.ign.com/t/ign_br/screenshot/default/darth-vader_5yvm.1200.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellendus cupiditate obcaecati? Dolorum impedit voluptatum molestiae adipisci eaque repellat fugit assumenda repellendus repudiandae! Fugiat a iusto ipsum sequi magnam veniam.</p>
+        </div>
+
+        <div class="linguagens">
+            <h2>Linguagens</h2>
+            <ul>
+                <li><i class='bx bxl-javascript' ></i>- Javascript</li>
+                <li><i class='bx bxl-typescript' ></i>- Typescript</li>
+                <li><i class='bx bxl-python' ></i>- Python</li>
+                <li><i class='bx bxl-java' ></i>- JAvA</li>
+                <li><i id="php" class='bx bxl-php' ></i></li>
+            </ul>
+        </div>
+
+        <div class="linguagens">
+            <h2>Frameworks</h2>
+            <ul>
+                <li><i class='bx bxl-angular' ></i>ngular</li>
+                <li><i class='bx bxl-react' ></i>React</li>
+                <li><i class='bx bxl-vuejs' ></i>ue.js</li>
+                <li><i class='bx bxl-bootstrap' ></i>ootstrap</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="projetos" id="projects">
+        <h2>Meus projetos</h2>
+        <div class="carousel-container" >
+            <div class="carousel">
+              <div class="carousel-item">
+                <img src="./images/blog-white.PNG" alt="Imagem 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/calculadora-1.PNG" alt="Imagem 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/cronometro.PNG" alt="Imagem 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/one-piece.PNG" alt="Imagem 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/psn.PNG" alt="Imagem 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/instagram-clone.PNG" alt="Imagem 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/pokedex.PNG" alt="Imagem 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/projeto-rocketseat.PNG" alt="Imagem 3">
+              </div>
+            </div>
+          
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+          </div>
+    </section>
+
+    <section class="contato">
+        <div class="social-links" id="contato">
+          <h2>Redes Sociais</h2>
+            <ul>
+              <li><a href="#"><i class='bx bxl-linkedin-square'></i> Linkedin</a></li>
+              <li><a href="#"><i class='bx bxl-github'></i> Github</a></li>
+              <li><a href="#"><i class='bx bxl-instagram-alt' ></i> instagram</a></li>
+              <li>kauafelintoc@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="email">
+          <h2>contato</h2>
+          <form>
+            <input type="text" placeholder="Email"/>
+            <input type="text" placeholder="Assunto..." />
+            <textarea name="descricao" id="descricao" rows="10" placeholder="seu projeto"></textarea>
+          </form>
+        </div>
+    </section>
+
+    <footer>
+      <p>© 2024  All Rights Reserved<a href="#"><i id="arrow-up" class='bx bxs-up-arrow-circle'></i></a></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

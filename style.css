@@ -1,9 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     color: #fff;
-    background-color: black;
+    box-sizing: border-box;
+    font-family: "Star Jedi V2";
+    scroll-behavior: smooth;
 }
 
 header{
@@ -11,7 +12,6 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    background-color: black;
 }
 
 .links{
@@ -32,13 +32,16 @@ header{
     font-size: 1.5rem;
 }
 
+#menu-bar{
+    display: none;
+}
 
 .home{
-    padding: 200px;
+    height: 100vh;
+    padding: 150px;
     display: flex;
     justify-content: center;
 }
-
 
 
 .initial > h1{
@@ -78,4 +81,216 @@ header{
 #btn:hover{
     border: 1px solid greenyellow;
     transition: .5s;
+}
+
+/*habilities*/
+.habilities{
+    width: 100%;
+    background-color: #ffffff4d;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.linguagens{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.linguagens > ul {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: transparent;
+}
+
+.linguagens > ul > li{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.bx{
+    font-size: 30px;
+    color: #ccc;
+}
+
+
+.about{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#perfil{
+    width: 150px;
+    z-index: 1;
+    border: 1px solid rgb(42, 134, 255);
+    transition: .5s;
+}
+#perfil:hover{
+    border: 1px solid greenyellow;
+    transition: .3s;
+}
+
+.about > p{
+    margin-top: 20px;
+    font-size: 12px;
+    width: 300px;
+    text-align: center;
+}
+
+/*projetos carrossel*/
+
+.projetos{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.projetos > h2{
+    margin-bottom: 50px;
+}
+
+.carousel-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel img {
+    width: 920px;
+    height: 480px;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #ffffff4d;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: #555;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+/*contato*/
+
+.contato{
+    width: 100%;
+    background-color: #ffffff4d;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding: 50px;
+    margin-top: 200px;
+}
+
+.social-links{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links > h2{
+    color: #ccc;
+}
+
+.social-links > ul{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: right;
+}
+.social-links > ul > li{
+    list-style: none;
+    display: flex;
+}
+.social-links > ul > li > a{
+    text-decoration: none;
+    font-size: 15px;
+    transition: .3s;
+}
+.social-links > ul > li > a:hover{
+    color: yellowgreen;
+    transition: .3s;
+}
+.social-links > ul > li > a > i{
+    font-size: 30px;
+}
+
+.email{
+    text-align: center;
+}
+
+.email > h2{
+    margin-bottom: 15px;
+}
+
+.email > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.email > form > input{
+    color: #555;
+    text-align: center;
+    border: 1px solid rgb(42, 134, 255);
+    border-radius: 10px;
+}
+
+#descricao{
+    color: #555;
+    text-align: center;
+    border: 1px solid rgb(42, 134, 255);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+footer > p{
+    margin-top: 30px;
+}
+
+#arrow-up{
+    font-size: 20px;
 }
