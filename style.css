@@ -118,6 +118,10 @@ header{
     color: #ccc;
 }
 
+#more{
+    display: none;
+}
+
 
 .about{
     width: 400px;

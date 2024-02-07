@@ -42,6 +42,17 @@
     }
 
     /*habilities*/
+
+    .ocult-responsive{
+        display: none;
+    }
+    #more{
+        margin-top: 10px;
+        display: block;
+        border-bottom: 1px solid #fff;
+        font-size: 15px;
+    }
+
     .habilities{
         width: 100%;
         display: flex;
@@ -51,7 +62,6 @@
 
     .linguagens{
         width: 150px;
-        display: flex;
         margin-left: 120px;
         margin-top: 30px;
     }
@@ -78,6 +88,13 @@
         font-size: 30px;
     }
 
+    #ocultar{
+        display: none;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        font-size: 15px;
+    }
+
     /*carrosel*/
 
     .carousel img {
@@ -102,19 +119,30 @@
     }
 
     .social-links{
+        display: none;
+    }
+
+    .social-responsive{
+        display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
-    .social-links > h2{
-        margin-left: 50px;
+    .social-responsive > h2{
+        font-size: 20px;
     }
 
-    .social-links > ul{
-        align-items: center;
+    .social-responsive > ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
     }
 
     #arrow-up{
         font-size: 20px;
+    }
+    #email{
+        font-size: 12px;
     }
 }
 

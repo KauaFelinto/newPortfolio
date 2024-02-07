@@ -31,3 +31,23 @@ function menu(){
   menu.classList.toggle('active');
   
 }
+
+function verMais(){
+  var ocultBtn = document.getElementById('ocultar');
+  var moreBtn = document.getElementById('more');
+  var more = document.querySelector('.ocult-responsive');
+
+  more.style.display = "flex";
+  moreBtn.style.display = 'none';
+  ocultBtn.style.display = 'block'
+}
+
+function ocultar(){
+  var ocultBtn = document.getElementById('ocultar');
+  var moreBtn = document.getElementById('more');
+  var more = document.querySelector('.ocult-responsive');
+
+  more.style.display = "none";
+  moreBtn.style.display = 'block';
+  ocultBtn.style.display = 'none';
+}
