@@ -53,22 +53,8 @@ header{
 }
 
 #btn{
-    width: 200px;
-    height: 60px;
-    font-size: 15px;
-    margin-top: 20px;
-    border: 1px solid rgb(42, 134, 255);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .5s;
-}
-#btn:hover{
-    border: 1px solid greenyellow;
-    transition: .5s;
-}
-
-#btn{
-    width: 200px;
+    font-size: 12px;
+    width: 250px;
     height: 40px;
     margin-top: 20px;
     border: 1px solid rgb(42, 134, 255);
@@ -88,18 +74,23 @@ header{
     width: 100%;
     background-color: #ffffff4d;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px;
 }
 
+.ocult-responsive{
+    display: flex;
+    gap: 30px;
+}
+
 .linguagens{
-    width: 300px;
+    width: 400px;
     display: flex;
     flex-direction: column;
 }
 
 .linguagens > ul {
-    margin: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -113,8 +104,12 @@ header{
     margin: 0;
 }
 
+#ocultar{
+    display: none;
+}
+
 .bx{
-    font-size: 30px;
+    font-size: 25px;
     color: #ccc;
 }
 
@@ -284,6 +279,10 @@ header{
     z-index: 1;
 }
 
+.social-responsive{
+    display: none;
+}
+
 /*footer*/
 footer{
     display: flex;
@@ -297,4 +296,5 @@ footer > p{
 
 #arrow-up{
     font-size: 20px;
+    margin-left: 20px;
 }

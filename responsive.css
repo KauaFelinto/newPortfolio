@@ -26,6 +26,10 @@
         margin-left: -10px;
     }
 
+    .initial{
+        align-items: center;
+    }
+
     .initial > h1{
         font-size: 30px;
         font-weight: bold;
@@ -36,9 +40,9 @@
     }
     
     #btn{
-        width: 100px;
-        height: 30px;
-        font-size: 8px;
+        width: 150px;
+        height: 50px;
+        font-size: 10px;
     }
 
     /*habilities*/
@@ -137,6 +141,10 @@
         justify-content: center;
         gap: 20px;
     }
+    .social-responsive > ul > li{
+        list-style: none;
+        margin: 5px;
+    }
 
     #arrow-up{
         font-size: 20px;
@@ -146,7 +154,7 @@
     }
 }
 
-@media (max-width: 3720px){
+@media (max-width: 720px){
     .habilities{
         padding: 20px;
         display: flex;
@@ -160,6 +168,8 @@
         margin-top: 30px;
     }
 }
+
+
 
 @media (max-width: 395px){
     .habilities{

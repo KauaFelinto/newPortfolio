@@ -24,13 +24,6 @@ setInterval(() => {
 
 
 
-function menu(){
-  
-  var menu = document.getElementById('menu');
-
-  menu.classList.toggle('active');
-  
-}
 
 function verMais(){
   var ocultBtn = document.getElementById('ocultar');
